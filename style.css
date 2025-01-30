@@ -1,0 +1,349 @@
+/* Estilo general del body */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    font-family: 'Arial', sans-serif; /* Fuente Arial, no cursiva */
+  
+    background-color: rgb(255, 255, 255);
+    
+    color: #1b460e; /* Color de texto oscuro para buena legibilidad */
+    font-size: 18px;
+}
+
+/* Estilo del header */
+header {
+    background: linear-gradient(to right, #e7cdff, #cafcc6); /* Degradado atractivo */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Alinea verticalmente */
+    color: rgb(21, 61, 26); /* Color del texto del header */
+    text-align: center; /* Alineación del texto */
+    width: 100%; /* Asegura que el header ocupa todo el ancho */
+    box-shadow: 0 4px 10px rgb(0, 0, 0); /* Sombra para profundidad */
+    padding: 10px; /* Añadir un poco de padding para mejor presentación */
+}
+
+/* Asegúrate de que el contenido dentro del header también esté centrado correctamente */
+.header-content {
+    display: flex;
+    flex-direction: column; /* Si quieres que todo esté en una columna */
+    align-items: center; /* Centra hijos en la dirección transversal (horizontal cuando usamos columna) */
+    gap: 15px; /* Espacio entre los elementos, ajusta según sea necesario */
+}
+
+/* Añadir margen a los elementos dentro del header-content */
+.header-content h1 {
+    margin: 0; /* Elimina márgenes predeterminados en h1 */
+}
+
+.header-content .menu {
+    margin: 0; /* Elimina márgenes predeterminados en el menú, si es necesario */
+}
+h1 {
+    margin-right: 20px;  /* Espacio entre el título y el menú */
+}
+/* Estilo para el logo en el encabezado */
+.logo {
+    width: 100px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+ /* Estilos para el menú */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Asegura que se muestre justo debajo del icono */
+    background-color: #f9d8ff;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgb(28, 56, 21);
+    border-radius: 5px;
+    padding: 8px;
+    z-index: 1000; /* Asegura que esté en la parte superior */
+    text-align: left;
+    right: 0; /* Alinea el menú a la derecha por defecto */
+}
+
+/* Esto hará que en pantallas grandes el menú se desplace a la derecha */
+@media (min-width: 600px) {
+    .menu-content {
+        left: 0; /* Muestra el menú hacia la izquierda si hay suficiente espacio */
+        right: auto; /* Asegura que no se use right cuando left está activo */
+    }
+}
+
+.menu-content a {
+    display: block;
+    padding: 6px 12px;
+    color: #113a1d;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Tamaño del texto de los enlaces */
+}
+
+.menu-content a:hover {
+    background-color: #b9f1c1;
+}
+
+.menu span {
+    font-size: 30px; /* Aumento del tamaño del icono */
+}
+
+.menu:hover .menu-content {
+    display: block; /* Muestra el contenido al pasar el mouse */
+}
+/* Estilo del título del header */
+header h1 {
+    margin: 0; /* Elimina margen */
+    font-size: 2em; /* Tamaño del texto más grande */
+    font-weight: bold; /* Negrita para mayor énfasis */
+}
+/* Estilo para contenedor principal */
+.container {
+    
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-image: url(imagenes/fodo\ cervi.jpg);    
+    background-color: #ffffffd7; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para secciones */
+section {
+    margin-bottom: 40px; 
+}
+
+h2 {
+    font-size: 2em; 
+    color: #20660d; 
+    border-bottom: 2px solid #600c71; 
+    padding-bottom: 10px;
+    margin: 20px 0; /* Espacio extra */
+}
+
+/* Estilo para párrafos */
+p {
+    margin-bottom: 15px; 
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: flex;
+    flex-direction: column;  
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.image-container {
+    position: relative;
+    margin: 10px; 
+    overflow: b; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px rgb(77, 255, 46); 
+    width: calc(25% - 20px); 
+    transition: transform 0.3s, box-shadow 0.3s; /* Añadido efecto de sombra */
+    background-image: url(imagenes/mesa.jpg); /* Fondo de la galería */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Efecto de zoom el contenedor */
+    box-shadow: 0 4px 15px rgb(140, 25, 255); /* Sombra más definida al pasar el mouse */
+}
+
+.image-container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.whatsapp-link {
+    position:center; 
+    bottom: 10px; 
+    left: 10px; 
+    display: block; /* Hace que el enlace ocupe toda la línea */
+    margin: 0 auto; /* El margen automático centrará el bloque */
+    text-align: center; /* Asegúrate de que el contenido dentro esté centrado */
+}
+
+/* Estilo para botones */
+.btn {
+    background-color: #10a526; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; /* Suave transición */
+}
+
+.btn:hover {
+    background-color: #000000; 
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+/* Estilo para el footer */
+footer {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #d0b2ea; 
+    color: #333; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra superior */
+}
+
+/* Estilo para integración de Facebook */
+.fb-container {
+    margin: 20px 0; 
+    
+}
+
+/* Consultas de medios para dispositivos móviles */
+@media (max-width: 768px) {
+    .image-container {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+
+    h1 {
+        font-size: 2em; 
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    .btn {
+        width: 100%; 
+        padding: 15px; 
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Cambié width: 80% a max-width: 90% para que la imagen no exceda el 90% del ancho de la modal */
+    max-height: 80%; /* Añadido para asegurar que la imagen no exceda el 80% de la altura de la modal */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Este ajuste mantiene la proporción de la imagen al escalar */
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: auto; /* Cambié a auto para adaptarse al contenido */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.fullscreen-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.fullscreen-btn:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.fullscreen-btn i {
+    color: #000; /* El color del ícono, ajusta según tu diseño */
+}
+
+
+p2 {
+    position: absolute; /* Cambia la posición a absoluta */
+    top: -20px; /* Ajusta según sea necesario */
+    left: 50%; /* Centra o coloca el texto donde necesites */
+    transform: translateX(-50%); /* Centra el elemento en el eje X */
+    background-color: rgb(255, 255, 255);
+    background-image: url(imagenes/papel.jpg);
+    border-radius: 6%;
+    font-size: 18px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 5px; /* opcional: ayuda a que el texto no toque los bordes */
+}
+
+.social-media {
+    display: flex; /* Usar flexbox para la disposición */
+    justify-content: center; /* Centrar horizontalmente los iconos */
+    gap: 10px; /* Espacio entre los iconos */
+    margin-top: 10px; /* Espacio superior para mejor separación */
+}
+
+.social-media a img {
+    width: 35px; /* Tamaño reducido para los iconos */
+    height: 30px; /* Tamaño reducido para los iconos */
+    transition: transform 0.3s ease; /* Animación suave al pasar el cursor */
+    border-radius: 50%; /* Bordes totalmente redondeados (círculo) */
+}
+
+.social-media a img:hover {
+    transform: scale(1.1); /* Aumentar un poco el tamaño al pasar el cursor */
+}

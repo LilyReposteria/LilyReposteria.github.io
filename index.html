@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lili Repostería</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo.png" alt="Logo de Lili Repostería" class="logo">
+        </div>
+        <h1>Lily Repostería </h1>
+        <div class="menu">
+            <span>☰</span>
+            <div class="menu-content">
+                 <a href="#sobre-lili">Sobre Lili</a>
+            <a href="#galeria">Repostería</a>
+            <a href="#galeria2">Bandeja de Congelados</a>
+                <a href="https://web.facebook.com/people/Lili-Reposter%C3%ADa/61561192434782/?ref=embed_page">Página de Facebook</a>
+                <a href="https://web.whatsapp.com/">WhatsApp</a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container">
+        <!-- Sección de Información sobre Lili -->
+        <section id="sobre-lili" class="info">
+            <h2>Sobre Lily</h2>
+             <p> ¡Hola! Soy Lili y me especializo en hacer tortas deliciosas y personalizadas. Ofrezco una variedad de sabores, como torta de zanahoria, piña, naranja, yogurt, café, chocolate, banano, Selva negra, torta de vino y porciones de torta de tres leches y vainilla. También preparo exquisitos brawnies, cupcakes de vainilla, naranja y banano.</p>
+    <p>Además, cuento con bandejas de deditos, panzerotti y deditos perfectos para eventos. Entre mis especialidades también se encuentran el brazo de reina, quesillo y choco flan.</p>
+    <p>Cada torta y aperitivo está hecho con amor y los mejores ingredientes, ideales para endulzar tus momentos especiales y hacer de cada celebración algo inolvidable. ¡Estoy aquí para ayudarte a disfrutar de cada ocasión!</p>
+        </section>
+<!-- Sección de Galería -->
+<section id="galeria" class="gallery">
+    <h2>Tortas personalizadas</h2>
+    <div class="gallery-images">
+        <div class="image-container">
+            <img src="imagenes/im1.png" alt="Torta de piña" />
+            <p2><i class="fas fa-utensils"></i> Torta de piña</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen 2.png" alt="Torta personalizada" />
+            <p2><i class="fas fa-utensils"></i> Torta personalizada</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen3.png" alt="Torta personalizada" />
+            <p2><i class="fas fa-utensils"></i> Torta personalizada</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen4.png" alt="Torta personalizada" />
+            <p2><i class="fas fa-utensils"></i> Torta personalizada</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen5.png" alt="Torta de zanahoria" />
+            <p2><i class="fas fa-utensils"></i> Torta de arequipe</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen 6.png" alt="Torta personalizada" />
+            <p2><i class="fas fa-utensils"></i> Torta personalizada</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/imagen 7.png" alt="Torta personalizadas" />
+            <p2><i class="fas fa-utensils"></i> Torta personalizada</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+           
+        </div>
+        <div class="image-container">
+            <img src="imagenes/cupcake.png" alt="Cupcake" />
+            <p2><i class="fas fa-utensils"></i> Cupcake</p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+           
+        </div>
+        <div class="image-container">
+            <img src="imagenes/braunie.png" alt="Brownie " />
+            <p2><i class="fas fa-utensils"></i> Brownie </p2>
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.previousElementSibling.src, this.previousElementSibling.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+           
+        </div>
+    </div>
+</section>
+
+<p style="text-align: center; ">¡Si quieres tu propia torta personalizada solo presiona este boton 👇! </p>
+
+<div class="whatsapp-link">
+   
+    <a href="https://wa.me/+573232423987" class="whatsapp-link">
+        <img src="imagenes/social.png" alt="Logo de WhatsApp" class="whatsapp-logo" style="width: 250px; height: auto;">
+    </a>
+</div>
+
+<section id="galeria2" class="gallery">
+    <h2>Bandeja de congelados</h2>
+    <div class="gallery-images">
+        <div class="image-container">
+            <p2><i class="fas fa-utensils"></i> Bandeja de deditos</p2>
+            <img src="imagenes/dedos.jpeg" alt="Bandeja de Deditos" />
+            
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.src, this.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container">
+            <p2><i class="fas fa-utensils"></i> Bandeja de panzerotti</p2>
+            <img src="imagenes/panserote.jpg" alt="Bandeja de panzerotti" />
+
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.src, this.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="image-container" style="background-color: aliceblue;">
+            <p2><i class="fas fa-utensils"></i>Todo</p2>
+            <img src="imagenes/todo.jpeg" alt="Todo" />
+            <button class="fullscreen-btn" onclick="openModal(this.previousElementSibling.src, this.previousElementSibling.alt); event.stopPropagation();">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+      
+  
+</section>
+
+<!-- Modal for displaying images -->
+<div id="imageModal" class="modal" style="display:none;">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+</div>
+
+<p style="text-align: center;">¡Si te intereza solo presiona este boton 👇! </p>
+
+<div class="whatsapp-link">
+   
+    <a href="https://wa.me/+573232423987" class="whatsapp-link">
+        <img src="imagenes/social.png" alt="Logo de WhatsApp" class="whatsapp-logo" style="width: 250px; height: auto;">
+    </a>
+</div>
+  <!-- Integración de Facebook -->
+  <h2 style="text-align: center; margin-bottom: 20px;">Lo más reciente:</h2>
+
+  <div class="fb-container" >
+      <div class="fb-page" 
+           data-href="https://www.facebook.com/profile.php?id=61561192434782" 
+           data-tabs="timeline" 
+           data-width="" 
+           data-height="" 
+           data-small-header="false" 
+           data-adapt-container-width="true" 
+           data-hide-cover="false" 
+           data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/profile.php?id=61561192434782" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/profile.php?id=61561192434782">Lili Repostería</a>
+          </blockquote>
+      </div>
+  </div>
+  <footer>
+    <p>¡Sigueme en facebook! : </p>
+    
+    <div class="social-media">
+        <a href="https://web.facebook.com/people/Lili-Reposter%C3%ADa/61561192434782/?ref=embed_page" target="_blank">
+            <img src="imagenes/facebook.png" alt="Facebook" />
+    
+    </div>
+
+
+
+    <div class="footer">
+        <a href="/politicaprivacidad.html">Política de Privacidad</a>
+        <a href="/terminosservicio.html">Términos de Servicio</a>
+    </div>
+
+    <div class="contacto">
+        <a href="/contacto.html">Soporte</a>
+    </div>
+    <p>&copy; 2025 Derechos Reservados - Lily repostería </p>
+
+</footer>
+    <!-- Incluir SDK de Facebook para JavaScript -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v13.0"></script>
+    <script>
+let currentImageIndex = 0;
+const images = [];
+
+function openModal(src, alt) {
+    // Limpiar la lista de imágenes antes de establecer el nuevo modal
+    images.length = 0;
+
+    const allImages = document.querySelectorAll('.gallery-images img');
+    allImages.forEach((img, index) => {
+        images.push({ src: img.src, alt: img.alt });
+    });
+
+    // Establecer el índice actual de la imagen
+    currentImageIndex = [...allImages].findIndex(img => img.src === src);
+
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const caption = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImage.src = src;
+    modalImage.alt = alt;
+    caption.textContent = alt;
+}
+
+function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+}
+
+function changeImage(direction) {
+    currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+
+    const modalImage = document.getElementById("modalImage");
+    const caption = document.getElementById("caption");
+    
+    modalImage.src = images[currentImageIndex].src;
+    modalImage.alt = images[currentImageIndex].alt;
+    caption.textContent = images[currentImageIndex].alt;
+}
+
+// Añade los eventos a los botones de navegación
+document.querySelector('.prev').onclick = function(event) {
+    event.stopPropagation(); // Evita que el clic se propague y cierre el modal
+    changeImage(-1);
+};
+
+document.querySelector('.next').onclick = function(event) {
+    event.stopPropagation(); // Evita que el clic se propague y cierre el modal
+    changeImage(1);
+};
+    </script>
+</body>
+
+</html>
